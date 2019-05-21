@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<input type="text" id="nhapchuoi"/>
+<input type="button" onclick="Checkemail()" value="Check"/>
+<script>
+
+    let regexp =  /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+\.[A-Za-z0-9]+$/;
+    function Checkemail() {
+        let nhapchuoi = document.getElementById("nhapchuoi").value;
+        if (regexp.test(nhapchuoi)) {
+            console.log(true);
+        }
+        else {
+            console.log(false);
+        }
+    }
+</script>
+</body>
+</html>
